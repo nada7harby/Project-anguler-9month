@@ -1,0 +1,31 @@
+.footer {
+  background-color: #1f2029; /* Dark background color */
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer .container {
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle white line at the top */
+  padding-top: 30px;
+}
+
+.footer p {
+  color: #a0a0a0; /* Gray text color */
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer p a {
+  color: #a0a0a0; /* Gray link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer p a:hover {
+  color: #fff; /* White link color on hover */
+}
+
+
+
+
+

@@ -1,0 +1,118 @@
+.create-nft-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%); /* Purple gradient background */
+}
+
+.section-heading {
+  margin-bottom: 60px;
+}
+
+.section-heading .line-dec {
+  width: 60px;
+  height: 3px;
+  background-color: #fff; /* White line color */
+  margin: 0 auto 20px auto;
+}
+
+.section-heading h2 {
+  color: #fff; /* White text color */
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.create-nft-section .item {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for items */
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  height: 100%; /* Ensure equal height */
+}
+
+.create-nft-section .item .heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.create-nft-section .item .number {
+  width: 40px;
+  height: 40px;
+  background-color: #fff; /* White background for number */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #6c5ce7; /* Purple text color for number */
+  margin-right: 15px;
+}
+
+.create-nft-section .item .icon {
+  width: 60px;
+  height: 60px;
+  background-color: #fff; /* White background for icon circle */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.create-nft-section .item .icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.create-nft-section .item h4 {
+  color: #fff; /* White text for step title */
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: left;
+}
+
+.create-nft-section .item p {
+  color: rgba(255, 255, 255, 0.8); /* Semi-transparent white text for description */
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.create-nft-section .main-button .btn {
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: #fff; /* White background for button */
+  color: #6c5ce7; /* Purple text color for button */
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.create-nft-section .main-button .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+  .section-heading h2 {
+    font-size: 2rem;
+  }
+  
+  .create-nft-section .item .heading {
+    flex-direction: column;
+  }
+  
+  .create-nft-section .item .number,
+  .create-nft-section .item .icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .create-nft-section .item h4,
+  .create-nft-section .item p {
+    text-align: center;
+  }
+}

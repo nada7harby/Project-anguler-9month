@@ -1,0 +1,8 @@
+.header {
+  position: fixed;
+  margin: 10px;
+  width: 97%;
+  background-color: rgb(215, 213, 242);
+  border-radius: 20px;
+  z-index: 20;
+}

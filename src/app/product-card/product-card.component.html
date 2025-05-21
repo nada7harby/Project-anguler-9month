@@ -1,0 +1,38 @@
+<div class="container">
+  <h2>Our Products</h2>
+
+  <div class="filter-section">
+    <div class="tabs ">
+      <button
+        *ngFor="let category of categories"
+        [class.active]="selectedCategory === category"
+        (click)="filterByCategory(category)"
+      >
+        {{ category }}
+      </button>
+    </div>
+
+    <div class="search-box">
+      <input
+        type="text"
+        placeholder="Search..."
+        [(ngModel)]="searchTerm"
+        (input)="filterProducts()"
+      >
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card" *ngFor="let product of filteredProducts">
+      <img [src]="product.image" [alt]="product.name" />
+      <div class="info">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p>Available: {{ product.stock }}</p>
+        <button [ngClass]="getButtonClass(product.stock)">
+          {{ getButtonLabel(product.stock) }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
